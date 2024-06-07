@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;InsertionSortApplication/src/helloworld.c&apos; to &apos;insertionsort_vitis.c&apos;" description="Rename resource &apos;helloworld.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/helloworld.c" name="insertionsort_vitis.c" stamp="1670601182715" updateReferences="true"/>
+</session>

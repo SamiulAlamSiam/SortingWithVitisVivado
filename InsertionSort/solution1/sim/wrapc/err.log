@@ -1,0 +1,25 @@
+In file included from D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/include/floating_point_v7_1_bitacc_cmodel.h:149:0,
+                 from D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/include/hls_fpo.h:143,
+                 from D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/include/hls_half_fpo.h:18,
+                 from D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/include/hls_half.h:25,
+                 from D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/include/etc/ap_private.h:52,
+                 from D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/include/ap_common.h:666,
+                 from D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/include/ap_fixed.h:9,
+                 from apatb_group3.cpp:11:
+D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/include/gmp.h:58:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/include/hls_fpo.h:143:0,
+                 from D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/include/hls_half_fpo.h:18,
+                 from D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/include/hls_half.h:25,
+                 from D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/include/etc/ap_private.h:52,
+                 from D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/include/ap_common.h:666,
+                 from D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/include/ap_fixed.h:9,
+                 from apatb_group3.cpp:11:
+D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/include/floating_point_v7_1_bitacc_cmodel.h:141:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+e-m:e-i64:64-i128:128-i256:256-i512:512-i1024:1024-i2048:2048-i4096:4096-n8:16:32:64-S128-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024obj/insertionTb.c_pre.c.tb.o: In function `main':
+E:\USN_Education\VitisCode\InsertionSort\InsertionSort\solution1\sim\wrapc/apcc_db/insertionTb.c_pre.c.tb.c:272: undefined reference to `gourp3'
+collect2.exe: error: ld returned 1 exit status
+make: *** [cosim.tv.exe] Error 1

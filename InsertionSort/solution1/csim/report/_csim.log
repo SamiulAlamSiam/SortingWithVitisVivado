@@ -1,0 +1,21 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../insertion_tb.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'SAS' on host 'desktop-noapfmr' (Windows NT_amd64 version 6.2) on Sat Dec 03 19:15:22 +0100 2022
+INFO: [HLS 200-10] In directory 'E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 6.185 seconds; peak allocated memory: 7.059 MB.
+   Compiling(apcc) ../../../insertion.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'SAS' on host 'desktop-noapfmr' (Windows NT_amd64 version 6.2) on Sat Dec 03 19:15:31 +0100 2022
+INFO: [HLS 200-10] In directory 'E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 1.109 seconds; peak allocated memory: 7.242 MB.
+   Generating csim.exe
+Insertion Sort: 
+5, 6, 11, 12, 13, 
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

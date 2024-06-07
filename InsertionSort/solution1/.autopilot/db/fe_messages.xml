@@ -1,0 +1,21 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/csynth.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="group3" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=group3" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="insertion.c:30:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="group3" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port= group3" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="insertion.c:31:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="group3" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port= array" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="insertion.c:32:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="group3" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port= array_size" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="insertion.c:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="group3" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port= output" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="insertion.c:29:0" msg_body="Inlining function 'InsertionSort' into 'group3'">
+        <args Callee="InsertionSort" Caller="group3"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

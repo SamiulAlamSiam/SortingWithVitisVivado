@@ -1,0 +1,30 @@
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: insertion.c, Line: 29, Column: 0 }
+Function:        group3
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          InsertionSort
+    DebugLoc:        { File: insertion.c, Line: 4, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          group3
+    DebugLoc:        { File: insertion.c, Line: 29, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: insertion.c, Line: 17, Column: 26 }
+Function:        group3
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_17_2
+  - String:          ' '
+  - LoopLoc:         'insertion.c:17:26'
+  - String:          ' '
+  - Function:        group3
+    DebugLoc:        { File: insertion.c, Line: 29, Column: 0 }
+  - String:          ' '
+...

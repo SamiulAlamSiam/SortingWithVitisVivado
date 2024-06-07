@@ -1,0 +1,4 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="insertion.c:17:26" msg_id="214-252" msg_severity="INFO" msg_body="Could not analyze the loop bounds" resolution="214-252" LoopLoc="insertion.c:17:26" LoopName="VITIS_LOOP_17_2" ParentFunc="group3"/>
+</VitisHLS:BurstInfo>
+

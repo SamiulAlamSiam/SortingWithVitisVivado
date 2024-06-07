@@ -1,0 +1,120 @@
+
+
+================================================================
+== Synthesis Summary Report of 'group3'
+================================================================
++ General Information: 
+    * Date:           Sat Dec  3 20:20:25 2022
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        InsertionSort
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z010-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+----------+-----+
+    |       Modules      | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |           |          |     |
+    |       & Loops      | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT   | URAM|
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+----------+-----+
+    |+ group3            |     -|  3.19|        -|       -|         -|        -|     -|        no|     -|   -|  250 (~0%)|  335 (1%)|    -|
+    | o VITIS_LOOP_37_1  |     -|  7.30|        -|       -|         2|        1|     -|       yes|     -|   -|          -|         -|    -|
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+---------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register      | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+---------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL          | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER          | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER        | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR        | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | array_r       | 0x10   | 32    | W      | Data signal of array_r           |                                                                      |
+| s_axi_control | array_size    | 0x20   | 32    | W      | Data signal of array_size        |                                                                      |
+| s_axi_control | output_r      | 0x28   | 32    | R      | Data signal of output_r          |                                                                      |
+| s_axi_control | output_r_ctrl | 0x2c   | 32    | R      | Control signal of output_r       | 0=output_r_ap_vld                                                    |
++---------------+---------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+----------+
+| Argument   | Direction | Datatype |
++------------+-----------+----------+
+| array      | inout     | int*     |
+| array_size | in        | int      |
+| output     | out       | int*     |
++------------+-----------+----------+
+
+* SW-to-HW Mapping
++------------+---------------+-----------+--------------------------------------+
+| Argument   | HW Interface  | HW Type   | HW Info                              |
++------------+---------------+-----------+--------------------------------------+
+| array      | s_axi_control | interface |                                      |
+| array_size | s_axi_control | register  | name=array_size offset=0x20 range=32 |
+| output     | s_axi_control | interface |                                      |
++------------+---------------+-----------+--------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
+== Bind Op Report
+================================================================
++---------------------+-----+--------+----------+-----+--------+---------+
+| Name                | DSP | Pragma | Variable | Op  | Impl   | Latency |
++---------------------+-----+--------+----------+-----+--------+---------+
+| + group3            | 0   |        |          |     |        |         |
+|   add_ln37_fu_92_p2 | -   |        | add_ln37 | add | fabric | 0       |
++---------------------+-----+--------+----------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+---------------------------------+--------------------------+
+| Type      | Options                         | Location                 |
++-----------+---------------------------------+--------------------------+
+| interface | mode=s_axilite port= group3     | insertion.c:30 in group3 |
+| interface | mode=s_axilite port= array      | insertion.c:31 in group3 |
+| interface | mode=s_axilite port= array_size | insertion.c:32 in group3 |
+| interface | mode=s_axilite port= output     | insertion.c:33 in group3 |
++-----------+---------------------------------+--------------------------+
+
+

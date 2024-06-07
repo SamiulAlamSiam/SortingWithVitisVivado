@@ -1,0 +1,25 @@
+21:39:52 **** Incremental Build of configuration Debug for project InsertionSortApplication ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/insertionsort_vitis.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/insertionsort_vitis.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/USN_Education/VitisCode/InsertionSort/vitis/InsertionSort_Platfrom/export/InsertionSort_Platfrom/sw/InsertionSort_Platfrom/standalone_domain/bspinclude/include -MMD -MP -MF"src/insertionsort_vitis.d" -MT"src/insertionsort_vitis.o" -o "src/insertionsort_vitis.o" "../src/insertionsort_vitis.c"
+'Finished building: ../src/insertionsort_vitis.c'
+' '
+'Building target: InsertionSortApplication.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LE:/USN_Education/VitisCode/InsertionSort/vitis/InsertionSort_Platfrom/export/InsertionSort_Platfrom/sw/InsertionSort_Platfrom/standalone_domain/bsplib/lib -o "InsertionSortApplication.elf"  ./src/insertionsort_vitis.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: InsertionSortApplication.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size InsertionSortApplication.elf  |tee "InsertionSortApplication.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22380	   1160	  22584	  46124	   b42c	InsertionSortApplication.elf
+'Finished building: InsertionSortApplication.elf.size'
+' '
+
+21:39:52 Build Finished (took 474ms)
+

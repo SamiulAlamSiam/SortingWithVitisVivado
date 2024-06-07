@@ -1,0 +1,6 @@
+<pragmas>
+<pragma file="insertion.c" line="30" pragmaType="interface" parentfunction="group3" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="insertion.c" line="31" pragmaType="interface" parentfunction="group3" mode="s_axilite" port="array" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="insertion.c" line="32" pragmaType="interface" parentfunction="group3" mode="s_axilite" port="array_size" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="insertion.c" line="33" pragmaType="interface" parentfunction="group3" mode="s_axilite" port="output" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

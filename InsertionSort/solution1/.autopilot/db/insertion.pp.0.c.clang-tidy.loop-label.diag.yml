@@ -1,0 +1,31 @@
+---
+MainSourceFile:  'E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_8_1:  '
+    FileOffset:      8
+    FilePath:        insertion.c
+    Replacements:    
+      - FilePath:        'E:\USN_Education\VitisCode\InsertionSort\InsertionSort\solution1\.autopilot\db\insertion.pp.0.c'
+        Offset:          46508
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_8_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_17_2:  '
+    FileOffset:      17
+    FilePath:        insertion.c
+    Replacements:    
+      - FilePath:        'E:\USN_Education\VitisCode\InsertionSort\InsertionSort\solution1\.autopilot\db\insertion.pp.0.c'
+        Offset:          46592
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_17_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_37_1:  '
+    FileOffset:      37
+    FilePath:        insertion.c
+    Replacements:    
+      - FilePath:        'E:\USN_Education\VitisCode\InsertionSort\InsertionSort\solution1\.autopilot\db\insertion.pp.0.c'
+        Offset:          47218
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_37_1: '
+...

@@ -1,0 +1,10 @@
+21:39:53 **** Incremental Build of configuration Debug for project InsertionSortApplication_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 58683 E:/USN_Education/VitisCode/InsertionSort/vitis/InsertionSort_Platfrom/export/InsertionSort_Platfrom/InsertionSort_Platfrom.xpfm standalone_domain E:/USN_Education/VitisCode/InsertionSort/vitis/InsertionSortApplication_system/Debug/system.bif
+sdcard_gen --xpfm E:/USN_Education/VitisCode/InsertionSort/vitis/InsertionSort_Platfrom/export/InsertionSort_Platfrom/InsertionSort_Platfrom.xpfm --sys_config InsertionSort_Platfrom --bif E:/USN_Education/VitisCode/InsertionSort/vitis/InsertionSortApplication_system/Debug/system.bif --bitstream E:/USN_Education/VitisCode/InsertionSort/vitis/InsertionSortApplication/_ide/bitstream/insertion_sort_wrapper.bit --elf E:/USN_Education/VitisCode/InsertionSort/vitis/InsertionSortApplication/Debug/InsertionSortApplication.elf,ps7_cortexa9_0
+creating BOOT.BIN using E:/USN_Education/VitisCode/InsertionSort/vitis/InsertionSortApplication/_ide/bitstream/insertion_sort_wrapper.bit
+Running D:/Software/Embeded/xilinx/Vitis/2022.2/bin/bootgen  -image E:/USN_Education/VitisCode/InsertionSort/vitis/InsertionSortApplication_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+21:39:56 Build Finished (took 3s.744ms)
+

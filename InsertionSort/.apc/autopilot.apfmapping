@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="insertion.h" path="E:\USN_Education\VitisCode\InsertionSort\insertion.h"/>
+    <originFiles name="insertion.c" path="E:\USN_Education\VitisCode\InsertionSort\insertion.c"/>
+  </source>
+  <testbench>
+    <originFiles name="insertionTb.c" path="E:\USN_Education\VitisCode\InsertionSort\insertionTb.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

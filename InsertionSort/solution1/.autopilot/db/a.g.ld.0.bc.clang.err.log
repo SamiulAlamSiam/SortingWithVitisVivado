@@ -1,0 +1,2 @@
+remark: insertion.c:29:0: Inlining function 'InsertionSort' into 'group3'
+remark: insertion.c:17:26: Could not analyze the loop bounds _XLX_SEP_ VITIS_LOOP_17_2 insertion.c:17:26 group3 

@@ -1,0 +1,820 @@
+INFO-FLOW: Workspace E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1 opened at Sat Dec 03 20:20:08 +0100 2022
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z010clg400-1 
+Execute       create_platform xc7z010clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: D:/Software/Embeded/xilinx/Vitis_HLS/2022.2\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: D:/Software/Embeded/xilinx/Vivado/2022.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z010-clg400-1'
+Command       create_platform done; 2.165 sec.
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.265 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File 
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File
+Execute     config_export -output=E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 2.342 sec.
+Execute   set_part xc7z010clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z010clg400-1 
+Execute     create_platform xc7z010clg400-1 -board  
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.122 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   config_export -format ip_catalog -output E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File -rtl verilog 
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.066 seconds; current allocated memory: 677.016 MB.
+INFO: [HLS 200-10] Analyzing design file 'insertion.c' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling insertion.c as C
+Execute       ap_part_info -name xc7z010-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang insertion.c -foptimization-record-file=E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.c.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -std=gnu99 -fgnu89-inline -target fpga64-xilinx-mingw32 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/autopilot -I D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c {-hls-platform-db-name=D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_120.000000_DSP_80.000000_FF_35200.000000_LUT_17600.000000_SLICE_4400.000000_URAM_0.000000 -device-name-info=xc7z010clg400-1 > E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.c.clang.out.log 2> E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.c.clang.err.log 
+Command       ap_eval done; 0.126 sec.
+INFO-FLOW: Done: GCC PP 39 time: 0.1 seconds per iteration
+Execute       set_directive_top group3 -name=group3 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+INFO-FLOW: Source syntax check for synthesis
+Execute       ap_eval exec -ignorestderr D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c {-hls-platform-db-name=D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_120.000000_DSP_80.000000_FF_35200.000000_LUT_17600.000000_SLICE_4400.000000_URAM_0.000000 -device-name-info=xc7z010clg400-1 > E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/clang.out.log 2> E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/clang.err.log 
+Command       ap_eval done; 0.117 sec.
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c std=gnu99 -target fpga  -directive=E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/.systemc_flag -fix-errors E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c std=gnu99 -target fpga  -directive=E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/all.directive.json -fix-errors E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0
+Execute       clang_tidy xilinx-remove-assert -desc remove-assert E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c std=gnu99 -target fpga  
+INFO-FLOW: exec D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-remove-assert -fix-errors E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.1 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c std=gnu99 -target fpga  
+Execute         ap_eval exec -ignorestderr D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0 > E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c.clang-tidy.loop-label.out.log 2> E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c.clang-tidy.loop-label.err.log 
+Command         ap_eval done; 0.306 sec.
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Command       clang_tidy done; 0.331 sec.
+Execute       ap_eval exec -ignorestderr D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c.xilinx-dataflow-lawyer.diag.yml E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c.xilinx-dataflow-lawyer.out.log 2> E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c.xilinx-dataflow-lawyer.err.log 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -std=gnu99 -fgnu89-inline -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/autopilot -I D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.bc {-hls-platform-db-name=D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_120.000000_DSP_80.000000_FF_35200.000000_LUT_17600.000000_SLICE_4400.000000_URAM_0.000000 -device-name-info=xc7z010clg400-1 > E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c.clang.out.log 2> E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.pp.0.c.clang.err.log 
+Command       ap_eval done; 0.136 sec.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.925 seconds; current allocated memory: 678.508 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.0.bc -args  "E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.g.bc"  
+Execute         ap_eval exec -ignorestderr D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/llvm-link E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/insertion.g.bc -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.0.bc > E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.1.lower.bc -args E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.1.lower.bc > E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log 
+INFO-FLOW: 
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.2.m1.bc -args E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/lib/libhlsm_39.bc D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/llvm-link E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/lib/libhlsm_39.bc D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/lib/libhlsmc++_39.bc -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.2.m1.bc > E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log 
+Command         ap_eval done; 1.761 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 1.761 sec.
+Execute       run_link_or_opt -opt -out E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=group3 -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=group3 -reflow-float-conversion -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.3.fpc.bc > E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log 
+Command         ap_eval done; 0.685 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.687 sec.
+Execute       run_link_or_opt -out E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.4.m2.bc -args E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/lib/libfloatconversion_39.bc 
+Execute         ap_eval exec -ignorestderr D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/llvm-link E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/lib/libfloatconversion_39.bc -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.4.m2.bc > E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=group3 
+Execute         ap_eval exec -ignorestderr D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=group3 -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.5.gdce.bc > E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log 
+INFO-FLOW: 
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+Execute       ap_eval exec -ignorestderr D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.0.bc.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=group3 -mllvm -hls-db-dir -mllvm E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -assume-maxi-align=1 -mllvm -reflow-pipeline-style-llvm-setting=2 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-assume-no-address-wrap=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=10 -x ir E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.lto.bc {-hls-platform-db-name=D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_120.000000_DSP_80.000000_FF_35200.000000_LUT_17600.000000_SLICE_4400.000000_URAM_0.000000 -device-name-info=xc7z010clg400-1 > E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.0.bc.clang.out.log 2> E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.ld.0.bc.clang.err.log 
+Command       ap_eval done; 0.186 sec.
+INFO: [HLS 214-178] Inlining function 'InsertionSort' into 'group3' (insertion.c:29:0)
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.771 seconds; current allocated memory: 679.316 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 679.316 MB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top group3 -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -auto-shift-reg-idiom -promote-dbg-pointer -norm-name E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.0.bc -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.012 seconds; current allocated memory: 684.660 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.1.bc -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.2.prechk.bc -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.012 seconds; current allocated memory: 685.684 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.g.1.bc to E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.o.1.bc -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_37_1' (insertion.c:37) in function 'group3' automatically.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.o.1.tmp.bc -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.047 seconds; current allocated memory: 706.773 MB.
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.o.2.bc -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.016 seconds; current allocated memory: 706.812 MB.
+INFO-FLOW: Finish building internal data model.
+Command     elaborate done; 3.804 sec.
+Execute     ap_eval exec zip -j E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'group3' ...
+Execute       ap_set_top_model group3 
+Execute       get_model_list group3 -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model group3 
+Execute       get_model_list group3 -filter all-wo-channel 
+INFO-FLOW: Model list for configure: group3
+INFO-FLOW: Configuring Module : group3 ...
+Execute       set_default_model group3 
+Execute       apply_spec_resource_limit group3 
+INFO-FLOW: Model list for preprocess: group3
+INFO-FLOW: Preprocessing Module: group3 ...
+Execute       set_default_model group3 
+Execute       cdfg_preprocess -model group3 
+Execute       rtl_gen_preprocess group3 
+INFO-FLOW: Model list for synthesis: group3
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'group3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model group3 
+Execute       schedule -model group3 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_37_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_37_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 706.812 MB.
+Execute       syn_report -verbosereport -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.sched.adb -f 
+INFO-FLOW: Finish scheduling group3.
+Execute       set_default_model group3 
+Execute       bind -model group3 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 706.812 MB.
+Execute       syn_report -verbosereport -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.bind.adb -f 
+INFO-FLOW: Finish binding group3.
+Execute       get_model_list group3 -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess group3 
+INFO-FLOW: Model list for RTL generation: group3
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'group3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model group3 -top_prefix  -sub_prefix group3_ -mg_file E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.compgen.tcl 
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'group3/array_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'group3/array_size' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'group3/output_r' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'group3' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'array_r', 'array_size', 'output_r' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'group3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.051 seconds; current allocated memory: 707.293 MB.
+Execute       source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.rtl_wrap.cfg.tcl 
+Execute       gen_rtl group3 -istop -style xilinx -f -lang vhdl -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/syn/vhdl/group3 
+Execute       gen_rtl group3 -istop -style xilinx -f -lang vlog -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/syn/verilog/group3 
+Execute       syn_report -csynth -model group3 -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/syn/report/group3_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       syn_report -rtlxml -model group3 -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/syn/report/group3_csynth.xml 
+Execute       syn_report -verbosereport -model group3 -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -model group3 -f -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.adb 
+Execute       db_write -model group3 -bindview -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info group3 -p E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3 
+Execute       export_constraint_db -f -tool general -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.constraint.tcl 
+Execute       syn_report -designview -model group3 -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.design.xml 
+Execute       syn_report -csynthDesign -model group3 -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/syn/report/csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       syn_report -wcfg -model group3 -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model group3 -o E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.protoinst 
+Execute       sc_get_clocks group3 
+Execute       sc_get_portdomain group3 
+INFO-FLOW: Model list for RTL component generation: group3
+INFO-FLOW: Handling components in module [group3] ... 
+Execute       source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.compgen.tcl 
+INFO-FLOW: Found component group3_control_s_axi.
+INFO-FLOW: Append model group3_control_s_axi
+INFO-FLOW: Append model group3
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: group3_control_s_axi group3
+INFO-FLOW: Generating E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model group3_control_s_axi
+INFO-FLOW: To file: write model group3
+INFO-FLOW: Generating E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+INFO-FLOW: DBG:PUTS: read_platform_lib E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/common.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/interface.gen 
+Execute       source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/vhdl' dstVlogDir='E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/vlog' tclDir='E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db' modelList='group3_control_s_axi
+group3
+' expOnly='0'
+Execute       source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute       source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.compgen.tcl 
+Execute         source ./control.slave.tcl 
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.25 seconds; current allocated memory: 713.570 MB.
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='group3_' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+INFO-FLOW: Done: create_csynth_xml config info time: 0.1 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='group3_control_s_axi
+group3
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute       source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/top-io-be.tcl 
+Execute       source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+Execute       source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.compgen.dataonly.tcl 
+Execute       source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.compgen.dataonly.tcl 
+Execute       source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.rtl_wrap.cfg.tcl 
+Execute       source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.compgen.dataonly.tcl 
+Execute       source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+Execute       source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute       source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.constraint.tcl 
+Execute       sc_get_clocks group3 
+Execute       source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter DISPLAY {bind_adapter axilite} ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA yes RTLNAME control_s_axi_U SOURCE {} VARIABLE {} MODULE group3 LOOP {} BUNDLEDNAME control DSP 0 BRAM 0 URAM 0}} report_dict {TOPINST group3 MODULE2INSTS {group3 group3} INST2MODULE {group3 group3} INSTDATA {group3 {DEPTH 1 CHILDREN {}}} MODULEDATA {group3 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln37_fu_92_p2 SOURCE {} VARIABLE add_ln37 LOOP VITIS_LOOP_37_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}}}}'
+INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
+INFO-FLOW: Running: gen_csynth_sec_pragma
+INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.289 seconds; current allocated memory: 718.434 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for group3.
+INFO: [VLOG 209-307] Generating Verilog RTL for group3.
+Execute       syn_report -model group3 -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 243.29 MHz
+Command     autosyn done; 0.696 sec.
+Command   csynth_design done; 4.559 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 4.559 seconds; current allocated memory: 41.691 MB.
+Command ap_source done; 17.107 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1 opened at Sat Dec 03 20:20:48 +0100 2022
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z010clg400-1 
+Execute       create_platform xc7z010clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: D:/Software/Embeded/xilinx/Vitis_HLS/2022.2\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: D:/Software/Embeded/xilinx/Vivado/2022.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z010-clg400-1'
+Command       create_platform done; 2.172 sec.
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.273 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File 
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File
+Execute     config_export -output=E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 2.347 sec.
+Execute   set_part xc7z010clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z010clg400-1 
+Execute     create_platform xc7z010clg400-1 -board  
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.125 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   config_export -format ip_catalog -output E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File -rtl verilog 
+Execute   export_design -rtl verilog -format ip_catalog -output E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File 
+Execute     config_export -format=ip_catalog -output=E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File -rtl=verilog 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format ip_catalog -rtl verilog
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=group3 xml_exists=0
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.rtl_wrap.cfg.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.rtl_wrap.cfg.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.rtl_wrap.cfg.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to group3
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=3
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=2 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='group3_control_s_axi
+group3
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/top-io-be.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.compgen.dataonly.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.compgen.dataonly.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.rtl_wrap.cfg.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.compgen.dataonly.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.constraint.tcl 
+Execute     sc_get_clocks group3 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to group3
+INFO-FLOW: DBG:PUTS:       copy ip_driver_dir 1_0 E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/driver
+INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.compgen.dataonly.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.compgen.dataonly.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_top_info
+INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=group3
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.rtl_wrap.cfg.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.rtl_wrap.cfg.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.rtl_wrap.cfg.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       generate_ipi_example_script
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.constraint.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/impl/ip/pack.bat
+INFO-FLOW: DBG:PUTS:     IP package: success E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/impl/ip/pack.bat
+Execute     send_msg_by_id INFO @200-802@%s VIVADO_IP_Zip_File/export.zip 
+INFO: [HLS 200-802] Generated output file VIVADO_IP_Zip_File/export.zip
+Command   export_design done; 11.15 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 11.15 seconds; current allocated memory: 8.508 MB.
+Command ap_source done; 23.768 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1 opened at Sat Dec 03 20:22:23 +0100 2022
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z010clg400-1 
+Execute       create_platform xc7z010clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: D:/Software/Embeded/xilinx/Vitis_HLS/2022.2\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: D:/Software/Embeded/xilinx/Vivado/2022.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z010-clg400-1'
+Command       create_platform done; 2.151 sec.
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.25 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File 
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File
+Execute     config_export -output=E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 2.319 sec.
+Execute   set_part xc7z010clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z010clg400-1 
+Execute     create_platform xc7z010clg400-1 -board  
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.113 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   config_export -format ip_catalog -output E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File -rtl verilog 
+Execute   cosim_design -trace_level all 
+INFO: [HLS 200-1510] Running: cosim_design -trace_level all 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.rtl_wrap.cfg.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xc7z010-clg400-1 -data info 
+INFO-FLOW: TB processing: E:/USN_Education/VitisCode/InsertionSort/insertionTb.c E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/./sim/autowrap/testbench/insertionTb.c_pre.c
+Execute     clang_tidy xilinx-tb-process -desc tb-process E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/./sim/autowrap/testbench/insertionTb.c_pre.c.tb.c std=gnu89 
+INFO-FLOW: exec D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/./sim/autowrap/testbench/insertionTb.c_pre.c.tb.c -- -std=gnu89 -fhls -ferror-limit=0
+Execute     ap_part_info -name xc7z010-clg400-1 -data info 
+INFO-FLOW: TB processing: E:/USN_Education/VitisCode/InsertionSort/insertion.c E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/./sim/autowrap/testbench/insertion.c_pre.c
+Execute     clang_tidy xilinx-tb-process -desc tb-process E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/./sim/autowrap/testbench/insertion.c_pre.c.tb.c std=gnu89 
+INFO-FLOW: exec D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/./sim/autowrap/testbench/insertion.c_pre.c.tb.c -- -std=gnu89 -fhls -ferror-limit=0
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.rtl_wrap.cfg.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.rtl_wrap.cfg.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.rtl_wrap.cfg.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.tbgen.tcl 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/group3.rtl_wrap.cfg.tcl 
+ERROR: [COSIM 212-317] C++ compile error.
+ERROR: [COSIM 212-321] EXE file generate failed.
+ERROR: [COSIM 212-321] EXE file generate failed.
+ERROR: [COSIM 212-331] Aborting co-simulation: C simulation failed, compilation errors.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO-FLOW: Caught error in cosim_design: 
+    while executing
+"ap_internal_cosim_design "
+Command   cosim_design done; error code: 2; 7.562 sec.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 7.562 seconds; current allocated memory: 4.355 MB.
+Command ap_source done; error code: 1; 20.053 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1 opened at Fri Dec 09 23:25:50 +0100 2022
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z010-clg400-1 
+Execute       create_platform xc7z010-clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: D:/Software/Embeded/xilinx/Vitis_HLS/2022.2\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: D:/Software/Embeded/xilinx/Vivado/2022.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z010-clg400-1'
+Command       create_platform done; 2.481 sec.
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.612 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File 
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File
+Execute     config_export -output=E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 2.723 sec.
+Execute   set_part xc7z010-clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z010-clg400-1 
+Execute     create_platform xc7z010-clg400-1 -board  
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.176 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_export -format ip_catalog -output E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File -rtl verilog 
+Execute   source ./InsertionSort/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./InsertionSort/solution1/directives.tcl
+Execute     set_directive_top -name group3 group3 
+INFO: [HLS 200-1510] Running: set_directive_top -name group3 group3 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 0.688 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.688 seconds; current allocated memory: 0.359 MB.
+Command ap_source done; error code: 1; 13.701 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1 opened at Fri Dec 09 23:26:30 +0100 2022
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z010-clg400-1 
+Execute       create_platform xc7z010-clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: D:/Software/Embeded/xilinx/Vitis_HLS/2022.2\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: D:/Software/Embeded/xilinx/Vivado/2022.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z010-clg400-1'
+Command       create_platform done; 2.456 sec.
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.576 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File 
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File
+Execute     config_export -output=E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 2.671 sec.
+Execute   set_part xc7z010-clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z010-clg400-1 
+Execute     create_platform xc7z010-clg400-1 -board  
+Execute     source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.154 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_export -format ip_catalog -output E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output E:/USN_Education/VitisCode/InsertionSort/VIVADO_IP_Zip_File -rtl verilog 
+Execute   source ./InsertionSort/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./InsertionSort/solution1/directives.tcl
+Execute     set_directive_top -name group3 group3 
+INFO: [HLS 200-1510] Running: set_directive_top -name group3 group3 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+Execute     source E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 0.75 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.75 seconds; current allocated memory: 0.246 MB.
+Command ap_source done; error code: 1; 13.674 sec.
+Execute cleanup_all 

@@ -1,0 +1,15 @@
+E:\USN_Education\VitisCode\InsertionSort\InsertionSort\solution1\.autopilot\db\insertion.pp.0.c:873:5: warning: Added loop label VITIS_LOOP_8_1:   [xilinx-label-all-loops]
+    for (i = 1; i < n; i++)
+    ^~~
+    VITIS_LOOP_8_1: 
+E:\USN_Education\VitisCode\InsertionSort\InsertionSort\solution1\.autopilot\db\insertion.pp.0.c:873:5: note: FIX-IT applied suggested code changes
+E:\USN_Education\VitisCode\InsertionSort\InsertionSort\solution1\.autopilot\db\insertion.pp.0.c:882:9: warning: Added loop label VITIS_LOOP_17_2:   [xilinx-label-all-loops]
+        while (j >= 0 && arr[j] > key)
+        ^~~~~
+        VITIS_LOOP_17_2: 
+E:\USN_Education\VitisCode\InsertionSort\InsertionSort\solution1\.autopilot\db\insertion.pp.0.c:882:9: note: FIX-IT applied suggested code changes
+E:\USN_Education\VitisCode\InsertionSort\InsertionSort\solution1\.autopilot\db\insertion.pp.0.c:906:2: warning: Added loop label VITIS_LOOP_37_1:   [xilinx-label-all-loops]
+ for(int i=0; i<array_size; i++){
+ ^~~
+ VITIS_LOOP_37_1: 
+E:\USN_Education\VitisCode\InsertionSort\InsertionSort\solution1\.autopilot\db\insertion.pp.0.c:906:2: note: FIX-IT applied suggested code changes

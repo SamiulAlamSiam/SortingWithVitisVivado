@@ -1,0 +1,23 @@
+   Build using "D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_group3.cpp
+   Compiling (apcc) insertion.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'SAS' on host 'desktop-noapfmr' (Windows NT_amd64 version 6.2) on Sat Dec 03 20:22:39 +0100 2022
+INFO: [HLS 200-10] In directory 'E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.663 seconds; peak allocated memory: 7.117 MB.
+   Compiling (apcc) insertionTb.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'D:/Software/Embeded/xilinx/Vitis_HLS/2022.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'SAS' on host 'desktop-noapfmr' (Windows NT_amd64 version 6.2) on Sat Dec 03 20:22:41 +0100 2022
+INFO: [HLS 200-10] In directory 'E:/USN_Education/VitisCode/InsertionSort/InsertionSort/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.671 seconds; peak allocated memory: 7.223 MB.
+   Compiling apatb_group3_ir.ll
+   Generating cosim.tv.exe
+Makefile.rules:322: recipe for target 'cosim.tv.exe' failed
